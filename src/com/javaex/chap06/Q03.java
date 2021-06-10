@@ -2,13 +2,13 @@ package com.javaex.chap06;
 
 import java.util.Scanner;
 
-public class Q2 {
+public class Q03 {
 
 	public static void bubbleSorting(int[] array, int size) {
 		int passCnt = 0, change=0, compare=0;
 		
 		for(int i=size-1; i>0; i--) {
-			
+			int passChangeCnt = 0;
 			System.out.println("패스" +(++passCnt)+ ":");
 			
 			for(int j=0; j<i; j++) {
@@ -17,11 +17,13 @@ public class Q2 {
 				
 				if(array[j] > array[j+1]) {
 					change++;	
+					passChangeCnt++;
 					swap(array, j, j+1); 
 				}
 				compare++;
 				System.out.println();
 			}
+			if(passChangeCnt == 0) break;
 			System.out.println();
 		}
 		System.out.println("비교 : " +compare+ ", 교환 : "+change);

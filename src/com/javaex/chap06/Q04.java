@@ -2,7 +2,7 @@ package com.javaex.chap06;
 
 import java.util.Scanner;
 
-public class Q4 {
+public class Q04 {
 
 	public static void bubbleSorting(int[] array, int size) {
 		int passCnt = 0, change=0, compare=0;

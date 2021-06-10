@@ -1,10 +1,10 @@
 package com.javaex.chap06;
 
-public class Q7 {
+public class Q07 {
 
 	private int[] array;
 	
-	public Q7(int capacity) {
+	public Q07(int capacity) {
 		array = new int[capacity+1];
 	}
 	
@@ -50,7 +50,7 @@ public class Q7 {
 	
 	public static void main(String[] args) {
 		
-		Q7 jss = new Q7((int)(Math.random()*7)+3);
+		Q07 jss = new Q07((int)(Math.random()*7)+3);
 		
 		jss.set();
 		System.out.println();

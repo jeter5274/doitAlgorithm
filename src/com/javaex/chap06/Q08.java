@@ -1,10 +1,10 @@
 package com.javaex.chap06;
 
-public class Q8 {
+public class Q08 {
 
 	private int[] array;
 	
-	public Q8(int capacity) {
+	public Q08(int capacity) {
 		array = new int[capacity];
 	}
 	
@@ -57,7 +57,7 @@ public class Q8 {
 	
 	public static void main(String[] args) {
 		
-		Q8 jss = new Q8((int)(Math.random()*7)+3);
+		Q08 jss = new Q08((int)(Math.random()*7)+3);
 		
 		jss.set();
 		System.out.println();

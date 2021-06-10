@@ -2,11 +2,11 @@ package com.javaex.chap06;
 
 import java.util.Scanner;
 
-public class Q5 {
+public class Q05 {
 
 	private int[] array;
 	
-	public Q5(int capacity) {
+	public Q05(int capacity) {
 		array = new int[capacity];
 	}
 	
@@ -119,7 +119,7 @@ public class Q5 {
 		//System.out.print("배열의 크기를 입력하시오. : ");
 		//BubbleSort bs = new BubbleSort(sc.nextInt());
 		int capacity = (int)(Math.random()*7) +3 ;
-		Q5 bs = new Q5(capacity);
+		Q05 bs = new Q05(capacity);
 		
 		bs.set();
 		System.out.println();

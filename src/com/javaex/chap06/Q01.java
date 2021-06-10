@@ -2,32 +2,14 @@ package com.javaex.chap06;
 
 import java.util.Scanner;
 
-public class Q3 {
+public class Q01 {
 
 	public static void bubbleSorting(int[] array, int size) {
-		int passCnt = 0, change=0, compare=0;
-		
 		for(int i=size-1; i>0; i--) {
-			int passChangeCnt = 0;
-			System.out.println("패스" +(++passCnt)+ ":");
-			
 			for(int j=0; j<i; j++) {
-				
-				for(int k=0; k<size; k++) System.out.print(array[k] + (k != j ? " " : array[j] > array[j+1] ? "+" : "-"));
-				
-				if(array[j] > array[j+1]) {
-					change++;	
-					passChangeCnt++;
-					swap(array, j, j+1); 
-				}
-				compare++;
-				System.out.println();
+				if(array[j] > array[j+1]) swap(array, j, j+1); 
 			}
-			if(passChangeCnt == 0) break;
-			System.out.println();
 		}
-		System.out.println("비교 : " +compare+ ", 교환 : "+change);
-		System.out.println();
 	}
 	
 	public static void swap(int[] array, int bigger, int smaller) {
@@ -54,7 +36,7 @@ public class Q3 {
 		
 		System.out.println("배열을 오름차순으로 정렬하였습니다.");
 		for(int i=0; i<array.length; i++) {
-			System.out.print(array[i]+" ");
+			System.out.println("array[" +i+ "] : " +array[i]);
 		}
 		
 		sc.close();
